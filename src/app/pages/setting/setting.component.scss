@@ -1,0 +1,108 @@
+// Global Styles
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000;  // Pure black background
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h2, h3 {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  label {
+    color: #bbb;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  // Input Fields
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    background: #111;  // Darker background
+    border: 1px solid #444;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    }
+  }
+  
+  // Profile Picture
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  // Save Button
+  .save-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+  
+    &:hover {
+      background: linear-gradient(90deg, #0056b3, #003f7f);
+    }
+  
+    &:disabled {
+      background-color: gray;
+      cursor: not-allowed;
+    }
+  }
+  
+  // Responsive Design
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .profile-pic {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .input-field {
+      font-size: 14px;
+    }
+  
+    .save-btn {
+      font-size: 14px;
+    }
+  }
+  

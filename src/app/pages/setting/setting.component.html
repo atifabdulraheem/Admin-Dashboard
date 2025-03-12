@@ -1,0 +1,82 @@
+<div class="container">
+    <h2 class="text-2xl font-semibold mb-6">Settings</h2>
+  
+    <form  (ngSubmit)="onSubmit()">
+      <!-- Profile Section -->
+      <div class="section">
+        <h3 class="text-lg font-semibold mb-2">Profile Settings</h3>
+  
+        <!-- Profile Picture Upload -->
+        <div class="mb-4">
+          <label class="block mb-2 text-sm font-medium">Profile Picture</label>
+          <input type="file" (change)="onFileSelected($event)" />
+          <img [src]="profilePicUrl" class="profile-pic mt-2" />
+        </div>
+  
+        <!-- Name -->
+        <div class="mb-4">
+          <label class="block mb-2 text-sm font-medium">Full Name</label>
+          <input type="text" formControlName="name" class="input-field" required />
+        </div>
+  
+        <!-- Email -->
+        <div class="mb-4">
+          <label class="block mb-2 text-sm font-medium">Email</label>
+          <input type="email" formControlName="email" class="input-field" required />
+        </div>
+      </div>
+  
+      <!-- Preferences Section -->
+      <div class="section">
+        <h3 class="text-lg font-semibold mb-2">Preferences</h3>
+  
+        <!-- Dark Mode Toggle -->
+        <div class="mb-4 flex items-center">
+          <label class="text-sm font-medium">Dark Mode</label>
+          <input type="checkbox" formControlName="darkMode" (change)="toggleDarkMode()" class="ml-2" />
+        </div>
+  
+        <!-- Language Selection -->
+        <div class="mb-4">
+          <label class="block mb-2 text-sm font-medium">Language</label>
+          <select formControlName="language" class="input-field">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+          </select>
+        </div>
+  
+        <!-- Notifications Toggle -->
+        <div class="mb-4 flex items-center">
+          <label class="text-sm font-medium">Enable Notifications</label>
+          <input type="checkbox" formControlName="notifications" class="ml-2" />
+        </div>
+      </div>
+  
+      <!-- Security Section -->
+      <div class="section">
+        <h3 class="text-lg font-semibold mb-2">Security</h3>
+  
+        <!-- Change Password -->
+        <div class="mb-4">
+          <label class="block mb-2 text-sm font-medium">New Password</label>
+          <input type="password" formControlName="password" class="input-field" />
+        </div>
+  
+        <div class="mb-4">
+          <label class="block mb-2 text-sm font-medium">Confirm Password</label>
+          <input type="password" formControlName="confirmPassword" class="input-field" />
+        </div>
+  
+        <!-- 2FA Toggle -->
+        <div class="mb-4 flex items-center">
+          <label class="text-sm font-medium">Enable Two-Factor Authentication</label>
+          <input type="checkbox" formControlName="twoFactorAuth" class="ml-2" />
+        </div>
+      </div>
+  
+      <!-- Save Button -->
+      <button type="submit" class="save-btn" [disabled]="settingsForm.invalid">Save Changes</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,39 @@
+.custom-table {
+    width: 100%;
+    background-color: #1e1e1e; /* Dark background */
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+  
+    th {
+      background-color: #333;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 12px;
+      text-align: left;
+    }
+  
+    td {
+      font-size: 14px;
+      padding: 10px;
+      color: #ddd;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+  
+    tr:hover {
+      background-color: #444;
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      th, td {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+  }
+  

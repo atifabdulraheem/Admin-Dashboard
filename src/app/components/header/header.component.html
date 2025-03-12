@@ -1,0 +1,44 @@
+<mat-toolbar class="bg-blue-500! px-4 shadow-md">
+  <!-- Sidebar Toggle Button -->
+  <button mat-icon-button class="text-white!" (click)="sideBarButtonClick()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <!-- Dashboard Title -->
+  <span class="text-white! text-lg font-semibold ml-2">Admin Dashboard</span>
+
+  <span class="flex-grow"></span> <!-- Pushes items to the right -->
+
+  <!-- Search Input -->
+    <input matInput placeholder="Search...">
+    <mat-icon matSuffix>search</mat-icon>
+
+  <!-- Notification Icon -->
+  <button mat-icon-button class="text-white!" matBadge="3" matBadgeColor="warn">
+    <mat-icon>notifications</mat-icon>
+  </button>
+
+  <!-- User Menu -->
+  <button mat-icon-button class="text-white!" [matMenuTriggerFor]="userMenu">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+
+  <!-- User Dropdown Menu -->
+  <mat-menu #userMenu="matMenu">
+    <button mat-menu-item routerLink="/profile">
+      <mat-icon>person</mat-icon> Profile
+    </button>
+    <button mat-menu-item routerLink="/notifications">
+      <mat-icon>notifications</mat-icon> Notifications
+    </button>
+    <button mat-menu-item routerLink="/settings">
+      <mat-icon>settings</mat-icon> Settings
+    </button>
+    <button mat-menu-item routerLink="/help">
+      <mat-icon>help_outline</mat-icon> Help
+    </button>
+    <button mat-menu-item routerLink="/login">
+      <mat-icon>exit_to_app</mat-icon> Logout
+    </button>
+  </mat-menu>
+</mat-toolbar>

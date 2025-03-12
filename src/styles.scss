@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: rgb(238, 238, 238);
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

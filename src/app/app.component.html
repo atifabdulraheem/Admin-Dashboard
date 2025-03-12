@@ -1,0 +1,33 @@
+<app-header (sidebarToggle)="drawer.toggle()" />
+<mat-drawer-container autosize >
+  <mat-drawer #drawer mode="side" class="shadow-lg!" [opened]="isSidebarOpen">
+    <div class="bg-white h-screen!">
+      <mat-nav-list role="list">
+        <mat-list-item
+          ><a routerLink="/" class="menu">
+            <mat-icon class="color-blue-500!">house</mat-icon>
+            <span>Dashboard</span>
+          </a></mat-list-item
+        >
+        <mat-list-item
+          ><a routerLink="/add-product" class="menu"
+            ><mat-icon class="color-blue-500!">add_shopping_cart</mat-icon>
+            <span>Add-Product</span></a
+          ></mat-list-item
+        >
+        <mat-list-item
+          ><a routerLink="/setting" class="menu"
+            ><mat-icon class="color-blue-500!">settings</mat-icon>
+            <span>Setting</span></a
+          ></mat-list-item
+        >
+      </mat-nav-list>
+    </div>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="h-screen! p-8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
