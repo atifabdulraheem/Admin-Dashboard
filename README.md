@@ -1,7 +1,7 @@
 # Admin-Dashboard
 
 
-## Overview Output Click on Image for View
+## Overview Output
 
 ![Weather-App Image 1](https://github.com/atifabdulraheem/Admin-Dashboard/blob/main/Overview/Screenshot%202025-03-13%20000306.png)
 
