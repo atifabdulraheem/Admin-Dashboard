@@ -5,11 +5,6 @@
 
 ![Weather-App 1](https://github.com/atifabdulraheem/Admin-Dashboard/blob/main/Overview/Screenshot%202025-03-13%20000306.png)
 
-![Weather-App Image 2](https://github.com/atifabdulraheem/Admin-Dashboard/blob/main/Overview/Screenshot%202025-03-13%20000413.png)
-
-![Weather-App Image 3](https://github.com/atifabdulraheem/Admin-Dashboard/blob/main/Overview/Screenshot%202025-03-13%20000455.png)
-
-
 ## Overview
 Admin-Dashboard is a comprehensive and user-friendly web application designed to manage and monitor various administrative tasks efficiently. This dashboard is ideal for administrators who need a centralized platform to oversee operations, track metrics, and manage data.
 
