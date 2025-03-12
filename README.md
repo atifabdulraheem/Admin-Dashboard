@@ -74,7 +74,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 For any inquiries or support, please contact:
 - Name: Atif Abdul Raheem
-- Email: atifabdulraheem@example.com
+- Email: atifabdulraheem2482@gmail.com
 - GitHub: [atifabdulraheem](https://github.com/atifabdulraheem)
 
 
