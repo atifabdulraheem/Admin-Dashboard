@@ -1,7 +1,7 @@
 # Admin-Dashboard
 
 ## Overview
-![Weather-App Image 1](src/assests/screenshos/image1.png)
+![Weather-App Image 1](Overview/Screenshot 2025-03-13 000306.png)
 ![Weather-App Image 2](path/to/your/image2.png)
 ![Weather-App Image 3](path/to/your/image3.png)
 ![Weather-App Image 4](path/to/your/image4.png)
